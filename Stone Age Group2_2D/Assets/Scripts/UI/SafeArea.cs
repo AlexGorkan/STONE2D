@@ -22,5 +22,7 @@ public class SafeArea : MonoBehaviour
         rectTransform.anchorMax = anchorMax;
     }
 
+
+
    
 }
