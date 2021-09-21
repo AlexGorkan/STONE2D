@@ -42,15 +42,17 @@ public class GameData : ScriptableObject
     {
         // gameData.DeleteKeyData(openLevelsValueName);
 
+        //if (!PlayerPrefs.HasKey(scoreValueName))
+        //{
+        //    SaveData(scoreValueName, Score);
+        //}
+        //if (!PlayerPrefs.HasKey(openLevelsValueName))
+        //{
+        //    SaveData(openLevelsValueName, OpenLevels);
+        //}
 
-        if (!PlayerPrefs.HasKey(scoreValueName))
-        {
-            SaveData(scoreValueName, Score);
-        }
-        if (!PlayerPrefs.HasKey(openLevelsValueName))
-        {
-            SaveData(openLevelsValueName, OpenLevels);
-        }
+        SaveData(scoreValueName, Score);
+        SaveData(openLevelsValueName, OpenLevels);
     }
 
 

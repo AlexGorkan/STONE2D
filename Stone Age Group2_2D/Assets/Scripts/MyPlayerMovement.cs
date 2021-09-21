@@ -27,7 +27,7 @@ public class MyPlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //ДЗ добавить enum
+        
         rb.velocity = new Vector2(currentPlayerSpeed*Time.deltaTime, rb.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(currentPlayerSpeed));
     }
@@ -35,12 +35,23 @@ public class MyPlayerMovement : MonoBehaviour
     public void RightMove()
     {
         currentPlayerSpeed = playerSpeed;
-        spriteRenderer.flipX = false; 
+        if (transform.localScale.x < 0)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
+        }
     }
     public void LeftMove()
     {
         currentPlayerSpeed = -playerSpeed;
-        spriteRenderer.flipX = true;    
+        if (transform.localScale.x > 0)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
+        }
+    }
+
+    public void Attack()
+    {
+        animator.SetTrigger("Attack");
     }
 
  
