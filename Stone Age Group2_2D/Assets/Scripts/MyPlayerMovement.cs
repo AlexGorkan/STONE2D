@@ -17,12 +17,14 @@ public class MyPlayerMovement : MonoBehaviour
     private float currentPlayerSpeed;
     private Rigidbody2D rb;
     private bool groundCheck;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = animObject.GetComponent<SpriteRenderer>();
         animator = animObject.GetComponent<Animator>();
+        
     }
 
     private void FixedUpdate()
@@ -32,6 +34,7 @@ public class MyPlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(currentPlayerSpeed));
     }
 
+  
     public void RightMove()
     {
         currentPlayerSpeed = playerSpeed;
@@ -52,6 +55,7 @@ public class MyPlayerMovement : MonoBehaviour
     public void Attack()
     {
         animator.SetTrigger("Attack");
+        
     }
 
  
