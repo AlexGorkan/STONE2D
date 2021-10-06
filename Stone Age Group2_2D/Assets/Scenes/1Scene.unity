@@ -512,6 +512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6349437585990603522, guid: 7bd27a56a505f00499d62d01fe27b647, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1238447410}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd27a56a505f00499d62d01fe27b647, type: 3}
 --- !u!1001 &267562229
@@ -1325,6 +1329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5809482100822510753, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1238447410}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!4 &1756425545 stripped
@@ -14957,6 +14965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana
       objectReference: {fileID: 0}
+    - target: {fileID: 5809482100822510753, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 967619291639319323}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1001 &3879004191327908667
@@ -15014,6 +15026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana
       objectReference: {fileID: 0}
+    - target: {fileID: 5809482100822510753, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1238447410}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4f3d2dc8a1587469df935bca150dba, type: 3}
 --- !u!1001 &3923975566326425287

@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ScoreCounter : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] private GameData gameData;
-    
+    public static event Action GetPoints;
 
     private void Start()
     {
@@ -20,24 +21,33 @@ public class ScoreCounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        //if (collision.gameObject.layer == 7)
+        //{
+        //    CountScore();
+        //    Destroy(collision.gameObject);
+        //}
+        Fructs fructs = collision.GetComponent<Fructs>();
+        if (fructs != null)
         {
-            CountScore();
+            GetPoints?.Invoke();
+            CheckWin();
             Destroy(collision.gameObject);
+
         }
+
     }
 
 
-    private void CountScore()
-    {
-        gameData.Score += 10;
-        scoreText.text = gameData.Score.ToString();
-        CheckWin();
-    }
+    //private void CountScore()
+    //{
+    //    gameData.Score += 10;
+    //    scoreText.text = gameData.Score.ToString();
+    //    CheckWin();
+    //}
 
-    private void CheckWin()
+    public void CheckWin()
     {
-        if ((gameData.Score % 40) == 0)
+        if ((gameData.Score % 240) == 0)
         {
             if (SceneManager.GetActiveScene().buildIndex == gameData.OpenLevels)
             {

@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyPlayerMovement : MonoBehaviour
 {
+     
+
     [Header("Player Property")]
     [SerializeField] private float playerSpeed;
     [SerializeField] private float playerJumpForce;
@@ -75,6 +78,7 @@ public class MyPlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         groundCheck = true;
+
     }
 
 }
