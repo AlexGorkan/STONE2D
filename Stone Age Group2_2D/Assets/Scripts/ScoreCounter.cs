@@ -13,7 +13,6 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] private GameData gameData;
     
-
     private void Start()
     {
         scoreText.text = gameData.Score.ToString();

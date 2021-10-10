@@ -7,14 +7,11 @@ public class PlayerCondition : ScriptableObject
 {
     public float hunger;
     public int hearths;
-    
-    
-    
+       
     void Start()
     {
         hunger = 1f;
         hearths = 3;
     }
-
-   
+       
 }

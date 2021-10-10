@@ -7,17 +7,13 @@ using System;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyPlayerMovement : MonoBehaviour
 {
-     
+
     public static event Action GetPoints;
     [Header("Player Property")]
     [SerializeField] private float playerSpeed;
     [SerializeField] private float playerJumpForce;
-
-    [SerializeField] private GameObject animObject;
-    private Animator animator;
-
-    private SpriteRenderer spriteRenderer;
-
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     private float currentPlayerSpeed;
     private Rigidbody2D rb;
     private bool groundCheck;
@@ -26,9 +22,6 @@ public class MyPlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = animObject.GetComponent<SpriteRenderer>();
-        animator = animObject.GetComponent<Animator>();
-        
     }
 
     private void FixedUpdate()
@@ -83,7 +76,7 @@ public class MyPlayerMovement : MonoBehaviour
         if (fructs != null)
         {
             GetPoints?.Invoke();
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
 
         }
 

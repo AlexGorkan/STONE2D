@@ -5,11 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameData", menuName = "ScriptableObjects/GameData", order = 1)]
 public class GameData : ScriptableObject
 {
-    public string scoreValueName = "Score";
-    public string openLevelsValueName = "OpenLevels";
-
     [SerializeField] private int score;
     [SerializeField] private int openLevels;
+    public string scoreValueName = "Score";
+    public string openLevelsValueName = "OpenLevels";
     public int Score
     {
         get
