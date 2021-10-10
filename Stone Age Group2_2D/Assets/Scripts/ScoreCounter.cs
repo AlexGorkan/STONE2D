@@ -10,9 +10,10 @@ using System;
 
 public class ScoreCounter : MonoBehaviour
 {
+    public static event Action GetPoints;
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] private GameData gameData;
-    public static event Action GetPoints;
+    
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class ScoreCounter : MonoBehaviour
         if (fructs != null)
         {
             GetPoints?.Invoke();
+            CountScore();
             CheckWin();
             Destroy(collision.gameObject);
 
@@ -37,17 +39,15 @@ public class ScoreCounter : MonoBehaviour
 
     }
 
-
-    //private void CountScore()
-    //{
-    //    gameData.Score += 10;
-    //    scoreText.text = gameData.Score.ToString();
-    //    CheckWin();
-    //}
+    private void CountScore()
+    {
+        scoreText.text = gameData.Score.ToString();
+        CheckWin();
+    }
 
     public void CheckWin()
     {
-        if ((gameData.Score % 240) == 0)
+        if ((gameData.Score % 40) == 0)
         {
             if (SceneManager.GetActiveScene().buildIndex == gameData.OpenLevels)
             {
@@ -59,7 +59,6 @@ public class ScoreCounter : MonoBehaviour
         }
 
     }
-
 
 }
 

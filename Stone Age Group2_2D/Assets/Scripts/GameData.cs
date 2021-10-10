@@ -36,15 +36,11 @@ public class GameData : ScriptableObject
         }
     }
 
-
-
     private void Awake()
     {
         SaveData(scoreValueName, Score);
         SaveData(openLevelsValueName, OpenLevels);
     }
-
-
 
     public void SaveData(string KeyName, int Value)
     {

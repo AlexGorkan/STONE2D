@@ -10,7 +10,6 @@ public class Orange : Fructs
         ScoreCounter.GetPoints += GivePoints;
     }
 
-
     private void OnDisable()
     {
         ScoreCounter.GetPoints -= GivePoints;
@@ -18,8 +17,7 @@ public class Orange : Fructs
     public override void GivePoints()
     {
         gameData.Score += pointsToGive;
-        scoreText.text = gameData.Score.ToString();
-
+        
     }
 
 

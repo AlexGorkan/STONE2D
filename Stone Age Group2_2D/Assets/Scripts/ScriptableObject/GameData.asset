@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9feca6e85a13f2446857b05c22261c6f, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  score: 0
-  openLevels: 1
+  scoreValueName: Score
+  openLevelsValueName: OpenLevels
+  score: 320
+  openLevels: 2

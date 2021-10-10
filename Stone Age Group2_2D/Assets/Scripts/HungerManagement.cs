@@ -11,11 +11,13 @@ public class HungerManagement : MonoBehaviour
     [SerializeField] private float hungerDropSpeed = 0.001f;
     [SerializeField] private PlayerCondition playerCondition;
 
-
-    
-    void Start()
+    private void Awake()
     {
         hungerBar = GetComponent<Image>();
+    }
+
+    void Start()
+    {
         playerCondition.hunger = maxHunger;
         //hunger = maxHunger;
     }

@@ -9,8 +9,7 @@ public class Banana : Fructs
     {
         ScoreCounter.GetPoints += GivePoints;
     }
-        
-
+    
     private void OnDisable()
     {
         ScoreCounter.GetPoints -= GivePoints;
@@ -18,8 +17,7 @@ public class Banana : Fructs
     public override void GivePoints()
     {
         gameData.Score += pointsToGive;
-        scoreText.text = gameData.Score.ToString();
-
+        
     }
 
     
