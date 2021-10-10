@@ -11796,10 +11796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86375b11faeffae4b9dfe8f27b9b4b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 200
-  playerJumpForce: 7
-  animator: {fileID: 882678543631579690}
-  spriteRenderer: {fileID: 1125655511071379496}
+  _playerSpeed: 200
+  _playerJumpForce: 7
+  _animator: {fileID: 882678543631579690}
+  _spriteRenderer: {fileID: 1125655511071379496}
 --- !u!58 &967619291639319322
 CircleCollider2D:
   m_ObjectHideFlags: 0

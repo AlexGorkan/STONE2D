@@ -10,30 +10,30 @@ public class MyPlayerMovement : MonoBehaviour
 
     public static event Action GetPoints;
     [Header("Player Property")]
-    [SerializeField] private float playerSpeed;
-    [SerializeField] private float playerJumpForce;
-    [SerializeField] private Animator animator;
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    private float currentPlayerSpeed;
-    private Rigidbody2D rb;
-    private bool groundCheck;
+    [SerializeField] private float _playerSpeed;
+    [SerializeField] private float _playerJumpForce;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    private float _currentPlayerSpeed;
+    private Rigidbody2D _rb;
+    private bool _groundCheck;
     
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
         
-        rb.velocity = new Vector2(currentPlayerSpeed*Time.deltaTime, rb.velocity.y);
-        animator.SetFloat("Speed", Mathf.Abs(currentPlayerSpeed));
+        _rb.velocity = new Vector2(_currentPlayerSpeed*Time.deltaTime, _rb.velocity.y);
+       _animator.SetFloat("Speed", Mathf.Abs(_currentPlayerSpeed));
     }
       
     public void RightMove()
     {
-        currentPlayerSpeed = playerSpeed;
+        _currentPlayerSpeed = _playerSpeed;
         if (transform.localScale.x < 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
@@ -41,7 +41,7 @@ public class MyPlayerMovement : MonoBehaviour
     }
     public void LeftMove()
     {
-        currentPlayerSpeed = -playerSpeed;
+        _currentPlayerSpeed = -_playerSpeed;
         if (transform.localScale.x > 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.y);
@@ -50,27 +50,27 @@ public class MyPlayerMovement : MonoBehaviour
 
     public void Attack()
     {
-        animator.SetTrigger("Attack");
+        _animator.SetTrigger("Attack");
     }
      
     public void StopMove()
     {
-        currentPlayerSpeed = 0f;
+        _currentPlayerSpeed = 0f;
     }
     
     public void Jump()
     {
-        if (groundCheck)
+        if (_groundCheck)
         {
-            animator.SetTrigger("Jump");
-            rb.velocity = new Vector2(rb.velocity.x, playerJumpForce);
-            groundCheck = false;
+            _animator.SetTrigger("Jump");
+            _rb.velocity = new Vector2(_rb.velocity.x, _playerJumpForce);
+            _groundCheck = false;
         }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        groundCheck = true;
+        _groundCheck = true;
 
         Fructs fructs = collision.GetComponent<Fructs>();
         if (fructs != null)
