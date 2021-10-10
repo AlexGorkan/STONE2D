@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 467318315381787231}
   - component: {fileID: 467318315381787230}
   - component: {fileID: 5319789949728323499}
-  - component: {fileID: 6349437585990603522}
+  - component: {fileID: 2388499290838905289}
   m_Layer: 7
   m_Name: Orange
   m_TagString: Untagged
@@ -101,7 +101,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3303001
---- !u!114 &6349437585990603522
+--- !u!114 &2388499290838905289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,6 +113,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cb3cb7a786de647acc43bb8e787a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
   gameData: {fileID: 11400000, guid: 332dd945013920c4ca01959eaf36be4c, type: 2}
   pointsToGive: 20

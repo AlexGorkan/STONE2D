@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyPlayerMovement : MonoBehaviour
 {
      
-
+    public static event Action GetPoints;
     [Header("Player Property")]
     [SerializeField] private float playerSpeed;
     [SerializeField] private float playerJumpForce;
@@ -36,8 +37,7 @@ public class MyPlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(currentPlayerSpeed*Time.deltaTime, rb.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(currentPlayerSpeed));
     }
-
-  
+      
     public void RightMove()
     {
         currentPlayerSpeed = playerSpeed;
@@ -58,14 +58,13 @@ public class MyPlayerMovement : MonoBehaviour
     public void Attack()
     {
         animator.SetTrigger("Attack");
-        
     }
-
- 
+     
     public void StopMove()
     {
         currentPlayerSpeed = 0f;
     }
+    
     public void Jump()
     {
         if (groundCheck)
@@ -75,9 +74,18 @@ public class MyPlayerMovement : MonoBehaviour
             groundCheck = false;
         }
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         groundCheck = true;
+
+        Fructs fructs = collision.GetComponent<Fructs>();
+        if (fructs != null)
+        {
+            GetPoints?.Invoke();
+            Destroy(collision.gameObject);
+
+        }
 
     }
 

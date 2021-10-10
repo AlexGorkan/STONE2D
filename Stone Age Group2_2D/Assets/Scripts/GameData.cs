@@ -46,16 +46,18 @@ public class GameData : ScriptableObject
     {
         PlayerPrefs.SetInt(KeyName, Value);
     }
+    
     public void SaveData()
     {
         SaveData(scoreValueName, Score);
         SaveData(openLevelsValueName, OpenLevels);
     }
+    
     public int GetData(string KeyName)
     {
         return PlayerPrefs.GetInt(KeyName);
     }
-
+   
     public void DeleteKeyData(string KeyName)
     {
         PlayerPrefs.DeleteKey(KeyName);

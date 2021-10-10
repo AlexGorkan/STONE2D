@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4404567290872157276}
   - component: {fileID: 4404567290872157279}
   - component: {fileID: 6463830213403397723}
-  - component: {fileID: 5809482100822510753}
+  - component: {fileID: 6082270390031782837}
   m_Layer: 7
   m_Name: Banana
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28731227, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5809482100822510753
+--- !u!114 &6082270390031782837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,6 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cdf8577608d48b4482ef64e2bb1680d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
   gameData: {fileID: 11400000, guid: 332dd945013920c4ca01959eaf36be4c, type: 2}
   pointsToGive: 10

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Orange : Fructs
 {
-    
+    [SerializeField] protected int pointsToGive;
     private void OnEnable()
     {
-        ScoreCounter.GetPoints += GivePoints;
+        MyPlayerMovement.GetPoints += GivePoints;
     }
 
     private void OnDisable()
     {
-        ScoreCounter.GetPoints -= GivePoints;
+        MyPlayerMovement.GetPoints -= GivePoints;
     }
     public override void GivePoints()
     {

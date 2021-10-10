@@ -6,11 +6,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using System;
 
 public class ScoreCounter : MonoBehaviour
 {
-    public static event Action GetPoints;
+    
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] private GameData gameData;
     
@@ -20,34 +19,24 @@ public class ScoreCounter : MonoBehaviour
         scoreText.text = gameData.Score.ToString();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnEnable()
     {
-        //if (collision.gameObject.layer == 7)
-        //{
-        //    CountScore();
-        //    Destroy(collision.gameObject);
-        //}
-        Fructs fructs = collision.GetComponent<Fructs>();
-        if (fructs != null)
-        {
-            GetPoints?.Invoke();
-            CountScore();
-            CheckWin();
-            Destroy(collision.gameObject);
-
-        }
-
+        MyPlayerMovement.GetPoints += CountScore;
     }
 
+    private void OnDisable()
+    {
+        MyPlayerMovement.GetPoints -= CountScore;
+    }
     private void CountScore()
     {
         scoreText.text = gameData.Score.ToString();
-        CheckWin();
+        //CheckWin();
     }
 
     public void CheckWin()
     {
-        if ((gameData.Score % 40) == 0)
+        if ((gameData.Score % 30) == 0)
         {
             if (SceneManager.GetActiveScene().buildIndex == gameData.OpenLevels)
             {
