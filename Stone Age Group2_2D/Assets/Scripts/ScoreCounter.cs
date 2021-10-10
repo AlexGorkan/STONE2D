@@ -6,11 +6,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
-    
-    [SerializeField] public TextMeshProUGUI scoreText;
+
+    [SerializeField] public Text scoreText;
     [SerializeField] private GameData gameData;
     
     private void Start()

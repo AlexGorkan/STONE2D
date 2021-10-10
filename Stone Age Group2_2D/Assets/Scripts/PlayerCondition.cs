@@ -8,7 +8,7 @@ public class PlayerCondition : ScriptableObject
     public float hunger;
     public int hearths;
        
-    void Start()
+    public void Awake()
     {
         hunger = 1f;
         hearths = 3;
