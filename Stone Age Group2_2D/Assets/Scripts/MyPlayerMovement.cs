@@ -8,7 +8,7 @@ using System;
 public class MyPlayerMovement : MonoBehaviour
 {
 
-    public static event Action GetPoints;
+    //public static event Action GetPoints;
     [Header("Player Property")]
     [SerializeField] private float _playerSpeed;
     [SerializeField] private float _playerJumpForce;
@@ -72,13 +72,13 @@ public class MyPlayerMovement : MonoBehaviour
     {
         _groundCheck = true;
 
-        Fructs fructs = collision.GetComponent<Fructs>();
-        if (fructs != null)
-        {
-            GetPoints?.Invoke();
-            collision.gameObject.SetActive(false);
+        //Fructs fructs = collision.GetComponent<Fructs>();
+        //if (fructs != null)
+        //{
+        //    GetPoints?.Invoke();
+        //    collision.gameObject.SetActive(false);
 
-        }
+        //}
 
     }
 

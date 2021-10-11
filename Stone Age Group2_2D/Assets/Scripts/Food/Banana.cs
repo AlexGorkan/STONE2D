@@ -1,16 +1,20 @@
 using UnityEngine;
+using System;
 
 public class Banana : Fructs
 {
+    public static event Action EatBanana;
     [SerializeField] protected int pointsToGive;
-    private void OnEnable()
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        MyPlayerMovement.GetPoints += GivePoints;
-    }
-    
-    private void OnDisable()
-    {
-        MyPlayerMovement.GetPoints -= GivePoints;
+        MyPlayerMovement player = collision.GetComponent<MyPlayerMovement>();
+        if (player != null)
+        {
+            GivePoints();
+            EatBanana?.Invoke();
+            gameObject.SetActive(false);
+        }
     }
     public override void GivePoints()
     {

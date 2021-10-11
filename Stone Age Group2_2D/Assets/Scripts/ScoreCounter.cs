@@ -4,7 +4,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -21,12 +20,15 @@ public class ScoreCounter : MonoBehaviour
 
     private void OnEnable()
     {
-        MyPlayerMovement.GetPoints += CountScore;
+        Banana.EatBanana += CountScore;
+        Orange.EatOrange += CountScore;
+
     }
 
     private void OnDisable()
     {
-        MyPlayerMovement.GetPoints -= CountScore;
+        Banana.EatBanana -= CountScore;
+        Orange.EatOrange -= CountScore;
     }
     private void CountScore()
     {
