@@ -1,0 +1,636 @@
+
+Client.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 845, 909
+  size: 149, 63
+  orig: 149, 63
+  offset: 0, 0
+  index: -1
+1_1
+  rotate: false
+  xy: 143, 647
+  size: 111, 93
+  orig: 111, 93
+  offset: 0, 0
+  index: -1
+1_2
+  rotate: false
+  xy: 385, 677
+  size: 109, 63
+  orig: 109, 63
+  offset: 0, 0
+  index: -1
+Book1
+  rotate: false
+  xy: 845, 773
+  size: 147, 126
+  orig: 147, 126
+  offset: 0, 0
+  index: -1
+Book2
+  rotate: true
+  xy: 264, 597
+  size: 79, 89
+  orig: 79, 89
+  offset: 0, 0
+  index: -1
+Book3
+  rotate: true
+  xy: 264, 597
+  size: 79, 89
+  orig: 79, 89
+  offset: 0, 0
+  index: -1
+Empty
+  rotate: false
+  xy: 1004, 971
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+Pupil
+  rotate: true
+  xy: 971, 696
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 845, 982
+  size: 167, 30
+  orig: 180, 47
+  offset: 6, 4
+  index: -1
+bandan
+  rotate: false
+  xy: 10, 624
+  size: 123, 116
+  orig: 123, 116
+  offset: 0, 0
+  index: -1
+gad1
+  rotate: true
+  xy: 504, 669
+  size: 71, 47
+  orig: 71, 47
+  offset: 0, 0
+  index: -1
+gad2
+  rotate: false
+  xy: 143, 590
+  size: 71, 47
+  orig: 72, 47
+  offset: 1, 0
+  index: -1
+j
+  rotate: false
+  xy: 971, 726
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+map
+  rotate: false
+  xy: 566, 781
+  size: 269, 231
+  orig: 269, 231
+  offset: 0, 0
+  index: -1
+shlap2
+  rotate: false
+  xy: 828, 584
+  size: 133, 81
+  orig: 133, 81
+  offset: 0, 0
+  index: -1
+shlap3
+  rotate: false
+  xy: 828, 675
+  size: 133, 88
+  orig: 133, 88
+  offset: 0, 0
+  index: -1
+sofa
+  rotate: false
+  xy: 10, 750
+  size: 546, 262
+  orig: 546, 262
+  offset: 0, 0
+  index: -1
+svistok
+  rotate: false
+  xy: 566, 633
+  size: 252, 138
+  orig: 252, 138
+  offset: 0, 0
+  index: -1
+trubka
+  rotate: false
+  xy: 264, 686
+  size: 111, 54
+  orig: 111, 54
+  offset: 0, 0
+  index: -1
+
+Client2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CatFamily/CatDaughter/Body
+  rotate: true
+  xy: 519, 629
+  size: 361, 366
+  orig: 361, 366
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/EyesClose
+  rotate: false
+  xy: 519, 517
+  size: 137, 102
+  orig: 137, 102
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/EyesOpen
+  rotate: false
+  xy: 666, 531
+  size: 135, 88
+  orig: 135, 88
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/Foot
+  rotate: false
+  xy: 873, 508
+  size: 116, 48
+  orig: 116, 48
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/HalfCloseEyes
+  rotate: true
+  xy: 666, 375
+  size: 146, 79
+  orig: 146, 79
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/Hand
+  rotate: false
+  xy: 895, 566
+  size: 79, 222
+  orig: 79, 222
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/Head
+  rotate: false
+  xy: 10, 587
+  size: 499, 403
+  orig: 499, 403
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/Leg
+  rotate: false
+  xy: 811, 423
+  size: 52, 196
+  orig: 52, 196
+  offset: 0, 0
+  index: -1
+CatFamily/CatDaughter/Tail
+  rotate: false
+  xy: 895, 798
+  size: 95, 192
+  orig: 95, 192
+  offset: 0, 0
+  index: -1
+
+Client3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+HippoFamily/Hippo/Body
+  rotate: true
+  xy: 526, 637
+  size: 371, 372
+  orig: 371, 372
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/Bow
+  rotate: false
+  xy: 721, 528
+  size: 127, 99
+  orig: 127, 99
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/EyesClose
+  rotate: false
+  xy: 10, 493
+  size: 106, 87
+  orig: 123, 92
+  offset: 7, 0
+  index: -1
+HippoFamily/Hippo/EyesOpen
+  rotate: false
+  xy: 126, 513
+  size: 108, 67
+  orig: 123, 92
+  offset: 6, 0
+  index: -1
+HippoFamily/Hippo/HalfCloseEyes
+  rotate: false
+  xy: 858, 522
+  size: 125, 76
+  orig: 125, 76
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/HandL
+  rotate: false
+  xy: 908, 813
+  size: 100, 195
+  orig: 100, 195
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/HandR
+  rotate: false
+  xy: 908, 608
+  size: 100, 195
+  orig: 100, 195
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/Head
+  rotate: false
+  xy: 10, 590
+  size: 506, 418
+  orig: 506, 418
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/Leg
+  rotate: true
+  xy: 526, 529
+  size: 98, 185
+  orig: 98, 185
+  offset: 0, 0
+  index: -1
+HippoFamily/Hippo/Tail
+  rotate: true
+  xy: 244, 531
+  size: 49, 127
+  orig: 49, 127
+  offset: 0, 0
+  index: -1
+
+Client4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LeoFamily/LeoSon/Body
+  rotate: true
+  xy: 10, 219
+  size: 288, 286
+  orig: 288, 286
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/EyesClose
+  rotate: true
+  xy: 422, 371
+  size: 136, 96
+  orig: 136, 96
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/EyesOpen
+  rotate: false
+  xy: 349, 33
+  size: 130, 60
+  orig: 130, 60
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/HalfCloseEyes
+  rotate: false
+  xy: 190, 12
+  size: 149, 73
+  orig: 149, 73
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/HandL
+  rotate: true
+  xy: 227, 103
+  size: 106, 209
+  orig: 106, 209
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/HandR
+  rotate: false
+  xy: 306, 298
+  size: 106, 209
+  orig: 106, 209
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/Head
+  rotate: false
+  xy: 10, 517
+  size: 475, 495
+  orig: 475, 495
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/Leg
+  rotate: true
+  xy: 10, 95
+  size: 114, 207
+  orig: 114, 207
+  offset: 0, 0
+  index: -1
+LeoFamily/LeoSon/Tail
+  rotate: true
+  xy: 10, 10
+  size: 75, 170
+  orig: 75, 170
+  offset: 0, 0
+  index: -1
+
+Client5.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mouth/SadCloseMouthMiddle
+  rotate: false
+  xy: 567, 704
+  size: 81, 22
+  orig: 81, 22
+  offset: 0, 0
+  index: -1
+Mouth/SmileCloseMouth
+  rotate: true
+  xy: 439, 642
+  size: 22, 53
+  orig: 22, 53
+  offset: 0, 0
+  index: -1
+Mouth/SmileCloseMouthBig
+  rotate: false
+  xy: 439, 674
+  size: 118, 52
+  orig: 118, 52
+  offset: 0, 0
+  index: -1
+Mouth/SmileCloseMouthMiddle
+  rotate: false
+  xy: 567, 663
+  size: 68, 31
+  orig: 68, 31
+  offset: 0, 0
+  index: -1
+Mouth/SmileCloseMouthSmall
+  rotate: true
+  xy: 502, 644
+  size: 20, 53
+  orig: 20, 53
+  offset: 0, 0
+  index: -1
+Mouth/SmileHalfOpenMouthBig
+  rotate: false
+  xy: 306, 657
+  size: 123, 69
+  orig: 123, 69
+  offset: 0, 0
+  index: -1
+Mouth/SmileOpenMouthBig
+  rotate: false
+  xy: 10, 628
+  size: 142, 98
+  orig: 142, 98
+  offset: 0, 0
+  index: -1
+Mouth/SmileOpenMouthMiddle
+  rotate: false
+  xy: 162, 644
+  size: 134, 82
+  orig: 134, 82
+  offset: 0, 0
+  index: -1
+Mouth/SurpriseOpenMouthMiddle
+  rotate: false
+  xy: 658, 659
+  size: 68, 67
+  orig: 68, 67
+  offset: 0, 0
+  index: -1
+Mouth/SurpriseOpenMouthSmall
+  rotate: false
+  xy: 565, 635
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+
+Client6.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PigFamily/PigSon/Body
+  rotate: false
+  xy: 493, 642
+  size: 375, 369
+  orig: 375, 369
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/EyesClose
+  rotate: true
+  xy: 878, 615
+  size: 138, 93
+  orig: 138, 93
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/EyesOpen
+  rotate: false
+  xy: 878, 941
+  size: 133, 70
+  orig: 133, 70
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/HalfCloseEyes
+  rotate: false
+  xy: 421, 558
+  size: 141, 74
+  orig: 141, 74
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/Hand
+  rotate: true
+  xy: 220, 576
+  size: 61, 191
+  orig: 61, 191
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/Head
+  rotate: false
+  xy: 10, 647
+  size: 473, 364
+  orig: 473, 364
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/Leg
+  rotate: true
+  xy: 10, 556
+  size: 81, 200
+  orig: 81, 200
+  offset: 0, 0
+  index: -1
+PigFamily/PigSon/Tail
+  rotate: false
+  xy: 878, 763
+  size: 95, 168
+  orig: 95, 168
+  offset: 0, 0
+  index: -1
+
+Client7.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PumaFamily/PumaDaughter/Body
+  rotate: false
+  xy: 495, 694
+  size: 376, 305
+  orig: 376, 305
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/EyesClose
+  rotate: false
+  xy: 679, 515
+  size: 136, 91
+  orig: 136, 91
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/EyesOpen
+  rotate: false
+  xy: 825, 421
+  size: 135, 85
+  orig: 135, 85
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Foot
+  rotate: false
+  xy: 881, 750
+  size: 98, 48
+  orig: 98, 48
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/HalfCloseEyes
+  rotate: false
+  xy: 701, 616
+  size: 139, 68
+  orig: 139, 68
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Hand
+  rotate: false
+  xy: 881, 516
+  size: 91, 224
+  orig: 91, 224
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Hat
+  rotate: false
+  xy: 495, 482
+  size: 174, 136
+  orig: 174, 136
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Head
+  rotate: false
+  xy: 10, 601
+  size: 475, 398
+  orig: 475, 398
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Leg
+  rotate: true
+  xy: 495, 628
+  size: 56, 196
+  orig: 56, 196
+  offset: 0, 0
+  index: -1
+PumaFamily/PumaDaughter/Tail
+  rotate: false
+  xy: 881, 808
+  size: 118, 191
+  orig: 118, 191
+  offset: 0, 0
+  index: -1
+
+Client8.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+RaccoonFamily/RaccoonSon/Body
+  rotate: true
+  xy: 489, 648
+  size: 364, 401
+  orig: 364, 401
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/EyesClose
+  rotate: true
+  xy: 900, 638
+  size: 142, 75
+  orig: 142, 75
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/EyesOpen
+  rotate: false
+  xy: 876, 564
+  size: 136, 64
+  orig: 136, 64
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/Foot
+  rotate: false
+  xy: 876, 506
+  size: 116, 48
+  orig: 116, 48
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/HalfCloseEyes
+  rotate: true
+  xy: 801, 494
+  size: 144, 65
+  orig: 144, 65
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/Hand
+  rotate: false
+  xy: 900, 790
+  size: 69, 222
+  orig: 69, 222
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/Head
+  rotate: false
+  xy: 10, 608
+  size: 469, 404
+  orig: 469, 404
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/Leg
+  rotate: false
+  xy: 739, 442
+  size: 52, 196
+  orig: 52, 196
+  offset: 0, 0
+  index: -1
+RaccoonFamily/RaccoonSon/Tail
+  rotate: true
+  xy: 489, 514
+  size: 124, 240
+  orig: 124, 240
+  offset: 0, 0
+  index: -1
