@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class HungerManagement : MonoBehaviour
 {
     Image hungerBar;
+
     [SerializeField] private float hungerDropSpeed = 0.001f;
     [SerializeField] private PlayerCondition playerCondition;
+
     private float maxHunger = 1f;
 
     private void Awake()

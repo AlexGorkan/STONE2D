@@ -7,8 +7,10 @@ public class GameData : ScriptableObject
 {
     [SerializeField] private int score;
     [SerializeField] private int openLevels;
+
     public string scoreValueName = "Score";
     public string openLevelsValueName = "OpenLevels";
+
     public int Score
     {
         get

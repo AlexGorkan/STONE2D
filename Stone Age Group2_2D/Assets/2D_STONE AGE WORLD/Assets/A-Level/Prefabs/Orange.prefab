@@ -114,4 +114,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameData: {fileID: 11400000, guid: 332dd945013920c4ca01959eaf36be4c, type: 2}
-  pointsToGive: 20
+  scoreToGive: 20

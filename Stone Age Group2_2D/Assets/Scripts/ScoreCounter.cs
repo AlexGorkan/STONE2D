@@ -1,8 +1,3 @@
-// https://docs.unity3d.com/ScriptReference/PlayerPrefs.html
-
-
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,15 +15,12 @@ public class ScoreCounter : MonoBehaviour
 
     private void OnEnable()
     {
-        Banana.EatBanana += CountScore;
-        Orange.EatOrange += CountScore;
-
+        MyPlayerMovement.OnPickUpFood += CountScore;
     }
 
     private void OnDisable()
     {
-        Banana.EatBanana -= CountScore;
-        Orange.EatOrange -= CountScore;
+        MyPlayerMovement.OnPickUpFood -= CountScore;
     }
     private void CountScore()
     {

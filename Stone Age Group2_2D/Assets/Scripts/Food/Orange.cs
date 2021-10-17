@@ -1,26 +1,11 @@
 using UnityEngine;
-using System;
 
 public class Orange : Fructs
 {
-    public static event Action EatOrange;
-    [SerializeField] protected int pointsToGive;
-
-    public void OnTriggerEnter2D(Collider2D collision)
+          
+    public override void GiveScore()
     {
-        MyPlayerMovement player = collision.GetComponent<MyPlayerMovement>();
-        if (player != null)
-        {
-            GivePoints();
-            EatOrange?.Invoke();
-            gameObject.SetActive(false);
-        }
+        gameData.Score += scoreToGive;
+        gameObject.SetActive(false);
     }
-
-    public override void GivePoints()
-    {
-        gameData.Score += pointsToGive;
-    }
-
-
 }

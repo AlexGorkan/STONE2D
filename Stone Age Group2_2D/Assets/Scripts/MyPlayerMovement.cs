@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
@@ -8,12 +6,14 @@ using System;
 public class MyPlayerMovement : MonoBehaviour
 {
 
-    //public static event Action GetPoints;
+    public static event Action OnPickUpFood;
+
     [Header("Player Property")]
     [SerializeField] private float _playerSpeed;
     [SerializeField] private float _playerJumpForce;
     [SerializeField] private Animator _animator;
     [SerializeField] private SpriteRenderer _spriteRenderer;
+
     private float _currentPlayerSpeed;
     private Rigidbody2D _rb;
     private bool _groundCheck;
@@ -72,13 +72,12 @@ public class MyPlayerMovement : MonoBehaviour
     {
         _groundCheck = true;
 
-        //Fructs fructs = collision.GetComponent<Fructs>();
-        //if (fructs != null)
-        //{
-        //    GetPoints?.Invoke();
-        //    collision.gameObject.SetActive(false);
-
-        //}
+        Fructs fructs = collision.GetComponent<Fructs>();
+        if (fructs != null)
+        {
+            fructs.GiveScore();
+            OnPickUpFood?.Invoke();
+        }
 
     }
 

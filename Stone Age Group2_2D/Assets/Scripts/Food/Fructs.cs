@@ -4,8 +4,11 @@ using UnityEngine;
 
 public abstract class Fructs : MonoBehaviour
 {
-    
-    public GameData gameData;
-    public abstract void GivePoints();
+
+    [SerializeField] protected GameData gameData;
+
+    [SerializeField] protected int scoreToGive;
+
+    public abstract void GiveScore();
       
 }
