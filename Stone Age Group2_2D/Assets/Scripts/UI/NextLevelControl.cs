@@ -11,6 +11,10 @@ public class NextLevelControl : MonoBehaviour
 
     protected bool isPaused = false;
 
+    private void Start()
+    {
+        _blackScreen = GetComponent<Image>();
+    }
     public void OnNextLevelButtonClick()
     {
         if (isPaused == false)
@@ -20,7 +24,7 @@ public class NextLevelControl : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 OnNextLevelStart();
-                
+                Time.timeScale = 0;
             });
             isPaused = true;
         }
@@ -30,7 +34,8 @@ public class NextLevelControl : MonoBehaviour
     public void OnNextLevelStart()
     {
         _blackScreen.DOColor(new Color(1f, 1f, 1f, 1f), 0.1f);
-        _blackScreen.DOFade(0, 4f);
+        _blackScreen.DOFade(0, 4f).OnComplete(() => Time.timeScale = 1);
+
         isPaused = false;
     }
 
