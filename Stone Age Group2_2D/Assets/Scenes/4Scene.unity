@@ -354,6 +354,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a5b173dbee5894087e55509073a729, type: 3}
+--- !u!114 &463871816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2740409465376376058, guid: c7a5b173dbee5894087e55509073a729, type: 3}
+  m_PrefabInstance: {fileID: 463871815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &552506055
 GameObject:
   m_ObjectHideFlags: 3
@@ -487,7 +498,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2531018, y: 1}
+    m_SensorSize: {x: 1.7772278, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -504,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312136756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1100008, y: -0.3599999, z: -10}
+  m_LocalPosition: {x: -2.1100006, y: -0.3599999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 552506056}
@@ -589,7 +600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529710690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1100008, y: -0.3599999, z: -10}
+  m_LocalPosition: {x: -2.1100006, y: -0.3599999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -938,9 +949,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86375b11faeffae4b9dfe8f27b9b4b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 200
-  playerJumpForce: 7
-  animObject: {fileID: 967495636190904918}
+  _playerSpeed: 200
+  _playerJumpForce: 7
+  _animator: {fileID: 882678543631579690}
+  _spriteRenderer: {fileID: 1125655511071379496}
 --- !u!58 &967619291639319322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -969,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6cb18ac675a024681a443e9a126a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 463871816}
   gameData: {fileID: 11400000, guid: 332dd945013920c4ca01959eaf36be4c, type: 2}
 --- !u!4 &971112035306402592
 Transform:
