@@ -13,8 +13,9 @@ public class StickPanelControl : MonoBehaviour
     {
         if (IsVisible == false)
         {
-            _sticksPanel.DOMove(new Vector3(_sticksPanel.position.x, _sticksPanel.position.y + 20), 1f, true);
             IsVisible = true;
+            _sticksPanel.DOMove(new Vector3(_sticksPanel.position.x, _sticksPanel.position.y + 20), 1f, true);
+            
         }
     }
 
@@ -22,8 +23,9 @@ public class StickPanelControl : MonoBehaviour
     {
         if (IsVisible == true)
         {
-            _sticksPanel.DOMove(new Vector3(_sticksPanel.position.x, _sticksPanel.position.y - 20), 1f, true);
             IsVisible = false;
+            _sticksPanel.DOMove(new Vector3(_sticksPanel.position.x, _sticksPanel.position.y - 20), 1f, true);
+            
         }
     }
 

@@ -13,8 +13,8 @@ public class CrystalPanelControl : MonoBehaviour
     {
         if (IsVisible == false)
         {
-            _tween = _crystalPanel.DOMove(new Vector3(_crystalPanel.position.x, _crystalPanel.position.y + 20), 2f, true);
             IsVisible = true;
+            _tween = _crystalPanel.DOMove(new Vector3(_crystalPanel.position.x, _crystalPanel.position.y + 20), 2f, true);
         }
     }
 
@@ -22,8 +22,8 @@ public class CrystalPanelControl : MonoBehaviour
     {
         if (IsVisible == true)
         {
-            _tween = _crystalPanel.DOMove(new Vector3(_crystalPanel.position.x, _crystalPanel.position.y - 20), 2f, true);
             IsVisible = false;
+            _tween = _crystalPanel.DOMove(new Vector3(_crystalPanel.position.x, _crystalPanel.position.y - 20), 2f, true);
         }
     }
 

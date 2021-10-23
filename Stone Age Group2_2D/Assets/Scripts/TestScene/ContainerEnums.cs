@@ -1,13 +1,14 @@
-namespace ContainerEnums 
+namespace ContainerEnums
 {
-    public enum CrystalTypes {
-                Crystal_1 = 0,
-                Crystal_2 = 1,
-                Ctystal_3 = 2,
-                Ctystal_4 = 3,
-                Ctystal_5 = 4,
-                Ctystal_6 = 5,
-                Ctystal_7 = 6
+    public enum CrystalTypes
+    {
+        Crystal_1 = 0,
+        Crystal_2 = 1,
+        Ctystal_3 = 2,
+        Ctystal_4 = 3,
+        Ctystal_5 = 4,
+        Ctystal_6 = 5,
+        Ctystal_7 = 6
     }
     public enum SticksTypes
     {
